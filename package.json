@@ -1,0 +1,42 @@
+{
+  "name": "pi-cua",
+  "version": "0.1.0",
+  "description": "Persistent JavaScript computer-use REPL for Pi, powered directly by Cua Driver",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "cua",
+    "computer-use",
+    "repl"
+  ],
+  "files": [
+    "src",
+    "skills",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.mjs"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:pi": "node scripts/pi-smoke.mjs",
+    "check": "node --check src/index.mjs && node --check src/runtime.mjs && node --check src/worker.mjs && node --check src/driver.mjs && node --check src/api.mjs",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "ajv": "8.18.0"
+  }
+}
