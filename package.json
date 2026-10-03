@@ -1,6 +1,6 @@
 {
   "name": "pi-cua",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Persistent JavaScript computer-use REPL for Pi, powered directly by Cua Driver",
   "type": "module",
   "license": "MIT",
@@ -35,8 +35,14 @@
     "check": "node --check src/index.mjs && node --check src/runtime.mjs && node --check src/worker.mjs && node --check src/driver.mjs && node --check src/api.mjs",
     "doctor": "node scripts/doctor.mjs"
   },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",
     "ajv": "8.18.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.0.0"
   }
 }

@@ -6,7 +6,7 @@ Pi reasons about the task. A session-owned Node REPL retains variables and app/w
 
 ## Install
 
-Requires Node.js 22+, Pi, and Cua Driver. Development targets Pi 0.84.3 and Cua Driver 0.28.2 on macOS; other platforms use the same MCP boundary but need native verification.
+Requires Node.js 22+, Pi, and Cua Driver. Development targets Pi 1.0.0 and Cua Driver 0.28.2 on macOS; other platforms use the same MCP boundary but need native verification. The two tools declare sequential execution. Cell failures return Pi 1.0's `isError` flag without discarding REPL state; usage/safety guidance uses tool guidelines rather than replacing the system prompt.
 
 Install Cua Driver using its [official instructions](https://cua.ai/docs/cua-driver). On macOS, grant **CuaDriver** Accessibility and Screen Recording access yourself:
 
