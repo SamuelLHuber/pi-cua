@@ -4,6 +4,7 @@
   "description": "Persistent JavaScript computer-use REPL for Pi, powered directly by Cua Driver",
   "type": "module",
   "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/SamuelLHuber/pi-cua.git" },
   "keywords": [
     "pi-package",
     "pi-extension",

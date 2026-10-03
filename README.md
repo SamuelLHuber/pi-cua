@@ -14,7 +14,13 @@ Install Cua Driver using its [official instructions](https://cua.ai/docs/cua-dri
 cua-driver permissions grant
 ```
 
-Install from your checkout:
+Install the tagged GitHub release:
+
+```sh
+pi install git:github.com/SamuelLHuber/pi-cua@v0.2.0
+```
+
+Or install from your checkout:
 
 ```sh
 cd ~/git/pi-cua
